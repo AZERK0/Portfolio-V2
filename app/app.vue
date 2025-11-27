@@ -51,13 +51,13 @@ onMounted(() => {
     const scrollY = window.scrollY
 
     if (orb1) {
-      orb1.style.transform = `translateY(${scrollY * -0.3}px)`
+      orb1.style.setProperty('--parallax-y', `${scrollY * -0.3}px`)
     }
     if (orb2) {
-      orb2.style.transform = `translateY(${scrollY * -0.5}px)`
+      orb2.style.setProperty('--parallax-y', `${scrollY * -0.5}px`)
     }
     if (orb3) {
-      orb3.style.transform = `translateY(${scrollY * -0.2}px)`
+      orb3.style.setProperty('--parallax-y', `${scrollY * -0.2}px`)
     }
   }
 
@@ -118,12 +118,48 @@ onMounted(() => {
   transform: translateZ(0);
 }
 
+@keyframes float-1 {
+  0%, 100% {
+    transform: translate(0, calc(0px + var(--parallax-y, 0px))) scale(1);
+  }
+  33% {
+    transform: translate(30px, calc(-20px + var(--parallax-y, 0px))) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, calc(30px + var(--parallax-y, 0px))) scale(0.95);
+  }
+}
+
+@keyframes float-2 {
+  0%, 100% {
+    transform: translate(0, calc(0px + var(--parallax-y, 0px))) scale(1);
+  }
+  33% {
+    transform: translate(-25px, calc(35px + var(--parallax-y, 0px))) scale(1.08);
+  }
+  66% {
+    transform: translate(40px, calc(-15px + var(--parallax-y, 0px))) scale(0.92);
+  }
+}
+
+@keyframes float-3 {
+  0%, 100% {
+    transform: translate(0, calc(0px + var(--parallax-y, 0px))) scale(1);
+  }
+  33% {
+    transform: translate(35px, calc(25px + var(--parallax-y, 0px))) scale(0.95);
+  }
+  66% {
+    transform: translate(-30px, calc(-20px + var(--parallax-y, 0px))) scale(1.05);
+  }
+}
+
 .light-orb {
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
   will-change: transform;
-  transition: transform 0.1s ease-out;
+  --parallax-y: 0px;
 }
 
 .light-orb-1 {
@@ -132,22 +168,25 @@ onMounted(() => {
   background: radial-gradient(circle, rgba(255, 140, 50, 0.9) 0%, rgba(255, 100, 30, 0.6) 30%, rgba(255, 80, 20, 0.3) 60%, transparent 80%);
   top: -15%;
   left: -8%;
+  animation: float-1 10s ease-in-out infinite;
 }
 
 .light-orb-2 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(240, 120, 40, 0.8) 0%, rgba(220, 90, 30, 0.5) 30%, rgba(200, 70, 20, 0.25) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(240, 120, 40, 0.7) 0%, rgba(220, 90, 30, 0.4) 30%, rgba(200, 70, 20, 0.15) 60%, transparent 80%);
   top: 10%;
   right: -12%;
+  animation: float-2 12s ease-in-out infinite;
 }
 
 .light-orb-3 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(255, 160, 70, 0.7) 0%, rgba(230, 100, 40, 0.45) 30%, rgba(210, 80, 30, 0.2) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(255, 160, 70, 0.6) 0%, rgba(230, 100, 40, 0.35) 30%, rgba(210, 80, 30, 0.1) 60%, transparent 80%);
   bottom: -10%;
   left: 20%;
+  animation: float-3 9s ease-in-out infinite;
 }
 
 .UMain > *:not(.vintage-lights-bg) {
