@@ -41,6 +41,32 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
     transform: data => data.flat()
   })
 ])
+
+onMounted(() => {
+  const orb1 = document.querySelector('.light-orb-1') as HTMLElement
+  const orb2 = document.querySelector('.light-orb-2') as HTMLElement
+  const orb3 = document.querySelector('.light-orb-3') as HTMLElement
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY
+
+    if (orb1) {
+      orb1.style.transform = `translateY(${scrollY * -0.3}px)`
+    }
+    if (orb2) {
+      orb2.style.transform = `translateY(${scrollY * -0.5}px)`
+    }
+    if (orb3) {
+      orb3.style.transform = `translateY(${scrollY * -0.2}px)`
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll, { passive: true })
+
+  onBeforeUnmount(() => {
+    window.removeEventListener('scroll', handleScroll)
+  })
+})
 </script>
 
 <template>
@@ -96,6 +122,8 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
+  will-change: transform;
+  transition: transform 0.1s ease-out;
 }
 
 .light-orb-1 {
