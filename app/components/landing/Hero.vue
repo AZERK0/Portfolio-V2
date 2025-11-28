@@ -183,16 +183,11 @@ defineProps<{
       >
         <UTooltip
           :text="icon.text"
-          :ui="{
-            background: 'bg-elevated',
-            ring: 'ring-1 ring-border',
-            color: 'text-foreground'
-          }"
           size="2xl"
         >
           <UIcon
             :name="icon.name"
-            class="size-16 sm:size-20"
+            class="size-12 sm:size-16"
           />
         </UTooltip>
       </Motion>
