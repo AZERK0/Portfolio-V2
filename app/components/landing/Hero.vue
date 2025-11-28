@@ -157,11 +157,13 @@ defineProps<{
     </template>
 
     <UMarquee
+      v-if="page.logos && page.logos.icons"
       pause-on-hover
+      :overlay="false"
       class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
     >
       <Motion
-        v-for="(img, index) in page.hero.images"
+        v-for="(icon, index) in page.logos.icons"
         :key="index"
         :initial="{
           scale: 1.1,
@@ -177,14 +179,22 @@ defineProps<{
           duration: 0.6,
           delay: index * 0.1
         }"
+        class="flex flex-col items-center gap-2 text-muted/50 hover:text-primary transition-colors duration-200"
       >
-        <NuxtImg
-          width="234"
-          height="234"
-          class="rounded-lg aspect-square object-cover"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
-          v-bind="img"
-        />
+        <UTooltip
+          :text="icon.text"
+          :ui="{
+            background: 'bg-elevated',
+            ring: 'ring-1 ring-border',
+            color: 'text-foreground'
+          }"
+          size="2xl"
+        >
+          <UIcon
+            :name="icon.name"
+            class="size-16 sm:size-20"
+          />
+        </UTooltip>
       </Motion>
     </UMarquee>
   </UPageHero>
