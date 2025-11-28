@@ -1,0 +1,13 @@
+title: MiniShell (C)
+description: |
+  Minishell : Développement d’un interpréteur de commandes UNIX :
+    - Exécution de toutes les commandes Unix standard, avec chemins relatifs/absolus, ainsi que leurs options spécifiques
+    - Support des fonctionnalités avancées telles que les redirections (>, <, >>), les pipes (|), et la gestion des variables d’environnement
+  Ce projet repose sur une implémentation bas niveau en C, utilisant des appels système pour manipuler les processus, gérer les entrées/sorties et coordonner efficacement les différentes fonctionnalités.
+image: /projects/mysh/demo.webp
+badge:
+  label: Epitech
+  color: red
+  variant: soft
+category: epitech
+date: Mars, 2024

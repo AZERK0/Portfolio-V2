@@ -44,10 +44,28 @@ export default defineContentConfig({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
         }),
+        logos: z.object({
+          title: z.string(),
+          icons: z.array(z.object({
+            name: z.string(),
+            text: z.string()
+          }))
+        }).optional(),
         about: createBaseSchema(),
+        studies: z.object({
+          headline: z.string(),
+          title: z.string(),
+          description: z.string(),
+          items: z.array(z.object({
+            title: z.string(),
+            description: z.string(),
+            icon: z.string(),
+            image: z.string()
+          }))
+        }).optional(),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
-            date: z.date(),
+            date: z.string(),
             position: z.string(),
             company: z.object({
               name: z.string(),
@@ -57,8 +75,23 @@ export default defineContentConfig({
             })
           }))
         }),
-        testimonials: z.array(createTestimonialSchema()),
-        blog: createBaseSchema(),
+        pricing: z.object({
+          headline: z.string(),
+          title: z.string(),
+          description: z.string(),
+          plan: z.object({
+            title: z.string(),
+            description: z.string(),
+            price: z.string().or(z.number()),
+            cycle: z.string(),
+            highlight: z.boolean().optional(),
+            align: z.string().optional(),
+            button: createButtonSchema(),
+            features: z.array(z.string())
+          })
+        }).optional(),
+        testimonials: z.array(createTestimonialSchema()).optional(),
+        blog: createBaseSchema().optional(),
         faq: createBaseSchema().extend({
           categories: z.array(
             z.object({
@@ -70,7 +103,12 @@ export default defineContentConfig({
                 })
               )
             }))
-        })
+        }).optional(),
+        cta: z.object({
+          title: z.string(),
+          description: z.string(),
+          links: z.array(createButtonSchema())
+        }).optional()
       })
     }),
     projects: defineCollection({
@@ -80,16 +118,31 @@ export default defineContentConfig({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date()
+        url: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+        date: z.date().or(z.string()),
+        otherImages: z.array(z.string()).optional(),
+        video: z.string().optional(),
+        badge: z.object({
+          label: z.string(),
+          color: z.string(),
+          variant: z.string()
+        }).optional(),
+        category: z.string().optional(),
+        alert: z.object({
+          icon: z.string(),
+          title: z.string(),
+          description: z.string(),
+          color: z.string(),
+          variant: z.string()
+        }).optional()
       })
     }),
     blog: defineCollection({
       type: 'page',
       source: 'blog/*.md',
       schema: z.object({
-        minRead: z.number(),
+        minRead: z.number().optional(),
         date: z.date(),
         image: z.string().nonempty().editor({ input: 'media' }),
         author: createAuthorSchema()
@@ -102,7 +155,7 @@ export default defineContentConfig({
         { include: 'blog.yml' }
       ],
       schema: z.object({
-        links: z.array(createButtonSchema())
+        links: z.array(createButtonSchema()).optional()
       })
     }),
     speaking: defineCollection({
@@ -113,7 +166,7 @@ export default defineContentConfig({
         events: z.array(z.object({
           category: z.enum(['Live talk', 'Podcast', 'Conference']),
           title: z.string(),
-          date: z.date(),
+          date: z.date().or(z.string()),
           location: z.string(),
           url: z.string().optional()
         }))
@@ -123,8 +176,14 @@ export default defineContentConfig({
       type: 'page',
       source: 'about.yml',
       schema: z.object({
-        content: z.object({}),
-        images: z.array(createImageSchema())
+        content: z.string().optional(),
+        images: z.array(createImageSchema()).optional(),
+        info: z.object({
+          name: z.string(),
+          birthdate: z.string(),
+          location: z.string()
+        }).optional(),
+        quote: z.string().optional()
       })
     })
   }

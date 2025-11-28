@@ -26,13 +26,47 @@ hero:
       alt: Random Image 8
     - src: /hero/random-9.avif
       alt: Random Image 9
-about:
-  title: "À propos de moi"
-  description: |
-    Développeur full-stack passionné avec plusieurs années d'expérience, je me spécialise dans la création d'applications web modernes et performantes.
-    Mon approche combine expertise technique et sens du design, transformant des concepts en produits numériques fonctionnels et élégants.
+logos:
+  title: Technologies maîtrisées
+  icons:
+    - name: i-simple-icons-angular
+      text: Angular
+    - name: i-simple-icons-vuedotjs
+      text: Vue.js
+    - name: i-simple-icons-nuxtdotjs
+      text: Nuxt.js
+    - name: i-simple-icons-adonisjs
+      text: Adonis.js
+    - name: i-simple-icons-python
+      text: Python
+    - name: i-simple-icons-cplusplus
+      text: C++ / C
+    - name: i-simple-icons-oracle
+      text: Java
+    - name: i-simple-icons-mysql
+      text: MySQL
+    - name: i-simple-icons-figma
+      text: Figma
+studies:
+  headline: Études
+  title: Mon parcours scolaire
+  description: Passionné d'informatique depuis mon plus jeune âge, je poursuis actuellement mes études en informatique à Epitech. J'ai eu l'opportunité de développer une expérience à travers divers projets personnels, que je complète aujourd'hui par un travail en équipe.
+  items:
+    - title: Lycée, 2020 - 2023
+      description: |
+        Baccalauréat Général : Mention Bien, Mention Européenne<br>
+        Spécialités : Maths, NSI, Physique-chimie
+      icon: my-icon:ara
+      image: /studies/aragon.webp
+    - title: Epitech, 2023 - 2028
+      description: |
+        Expert en technologies de l’information<br>
+        - Pédagogie axée sur l'apprentissage par projet.
+      icon: my-icon:epitech
+      image: /studies/epitech.webp
 experience:
   title: Expérience Professionnelle
+  description: J'ai eu l'opportunité de travailler dans diverses entreprises, ce qui m'a permis de développer mes compétences en développement web et de développer mon travail en équipe.
   items:
     - position: "Développeur Full-Stack chez"
       date: "2023 - Aujourd'hui"
@@ -55,58 +89,34 @@ experience:
         logo: "i-my-icon-epitech"
         url: "https://www.epitech.eu"
         color: "#0091d3"
-testimonials:
-  - quote: "Raphael a démontré une excellente maîtrise technique et une capacité à résoudre des problèmes complexes. Son travail sur notre plateforme a considérablement amélioré les performances et l'expérience utilisateur."
-    author:
-      name: 'Client Satisfait'
-      description: 'Responsable Technique'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Un développeur professionnel avec qui il est agréable de travailler. Raphael comprend rapidement les besoins et propose des solutions adaptées et innovantes."
-    author:
-      name: 'Partenaire Projet'
-      description: 'Chef de Projet'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-blog:
-  title: "Derniers Articles"
-  description: "Quelques-unes de mes réflexions récentes"
-faq:
-  title: Questions Fréquentes
-  description: Réponses aux questions courantes sur mes services et mon processus de travail.
-  categories:
-    - title: Services & Process
-      questions:
-        - label: Quels services proposez-vous ?
-          content: |
-            Je me spécialise dans le développement full-stack d'applications web modernes. Cela inclut le développement backend (AdonisJS, Node.js), frontend (Vue.js, Angular, React), l'architecture de bases de données, et le déploiement d'applications. Mon objectif est de créer des solutions complètes, de la conception au déploiement.
-        - label: Quel est votre processus de développement ?
-          content: |
-            Mon processus est collaboratif et itératif, comprenant généralement les phases suivantes : analyse des besoins, conception technique, développement avec des itérations régulières, tests, et déploiement. Je m'adapte selon les besoins du projet, en privilégiant toujours des solutions centrées sur l'utilisateur et les performances.
-        - label: Travaillez-vous avec des startups ?
-          content: |
-            Absolument ! J'apprécie travailler avec des startups pour les aider à concrétiser leur vision produit et créer des applications performantes dès le départ. Je peux adapter mon processus à l'environnement dynamique des startups.
-    - title: Tarifs & Délais
-      questions:
-        - label: Combien coûte un projet typique ?
-          content: |
-            Les coûts varient selon la portée, la complexité, les fonctionnalités et le calendrier du projet. Pour des projets de développement full-stack complets, mes engagements commencent généralement autour de 5 000€, avec des projets moyens entre 8 000€ et 25 000€. Pour du conseil ou des tâches spécifiques, mon tarif journalier est de 500€.
-        - label: Quelles sont vos conditions de paiement ?
-          content: |
-            Je demande généralement un acompte de 40% pour planifier et commencer le projet, avec les 60% restants dus à la livraison réussie du projet. J'accepte les paiements par virement bancaire.
-        - label: Combien de temps dure un projet typique ?
-          content: |
-            Les délais dépendent fortement de la portée et de la complexité du projet. Les petits projets peuvent prendre 3 à 4 semaines, tandis que les projets plus importants peuvent s'étendre de 2 à 4 mois. Je fournis toujours une estimation détaillée après la phase de découverte initiale.
-        - label: Proposez-vous des contrats ou un support continu ?
-          content: |
-            Oui, pour les clients nécessitant un support continu, du développement de fonctionnalités ou de la maintenance, je propose des options de contrat mensuelles adaptées aux besoins spécifiques. Discutons-en si cela vous intéresse.
-    - title: À propos
-      questions:
-        - label: Qu'appréciez-vous le plus dans votre travail ?
-          content: |
-            J'adore le défi de résoudre des problèmes complexes à travers le développement et la technologie. C'est incroyablement gratifiant de voir des utilisateurs interagir avec quelque chose que j'ai créé et le trouver réellement utile et facile à utiliser. Combler le fossé entre les besoins des utilisateurs et les possibilités techniques est ce qui me passionne vraiment.
-        - label: Quels sont vos hobbies en dehors du travail ?
-          content: |
-            Quand je ne code pas, j'aime explorer de nouvelles technologies, contribuer à des projets open-source, et me tenir au courant des dernières tendances du développement web. Je pratique également la randonnée et la photographie.
+pricing:
+  headline: Tarifs
+  title: Quels sont mes tarifs ?
+  description: Contactez-moi pour obtenir un devis personnalisé.
+  plan:
+    title: Freelance Web
+    description: Développement de sites web et d'applications web sur mesure.
+    price: 250€
+    cycle: /jour
+    highlight: true
+    align: top
+    button:
+      label: Me contacter
+      to: ?contactPopup=true
+    features:
+      - Conception
+      - Développement
+      - Tests
+      - Déploiement
+about:
+  title: "À propos de moi"
+  description: |
+    Développeur full-stack passionné avec plusieurs années d'expérience, je me spécialise dans la création d'applications web modernes et performantes.
+    Mon approche combine expertise technique et sens du design, transformant des concepts en produits numériques fonctionnels et élégants.
+cta:
+  title: Envie de travailler ensemble ?
+  description: Contactez-moi dès maintenant.
+  links:
+    - label: Me contacter
+      size: xl
+      to: ?contactPopup=true

@@ -1,0 +1,13 @@
+title: NeuraStock A.I. (Python, TensorFlow, PostgreSQL)
+description: |
+  Intelligence artificielle entraînée sur 10 000 cotations boursières à travers le monde.
+  Utilisation d'API et d'une base de données PostgreSQL pour la récupération des données, suivie d'un traitement et d'un nettoyage approfondis.
+  Ces données sont ensuite passées dans un modèle Transformer développé en Python avec TensorFlow et Keras,
+  avant d'être testées à l'aide d'outils de backtest intégrant de nombreuses statistiques.
+image: /projects/neurastock/benefit.webp
+badge:
+  label: Perso
+  color: blue
+  variant: soft
+category: perso
+date: Mai, 2020 - Sept., 2021

@@ -1,0 +1,18 @@
+title: Grossify (Nuxt.js, Adonis.js)
+description: |
+  Marketplace dédiée aux grossistes et aux restaurateurs :
+    - Permet aux restaurateurs, grâce à l'IA et à des outils de recherche, de trouver les grossistes les mieux adaptés à leurs besoins spécifiques et les plus économiques
+    - Offre aux grossistes la possibilité d'augmenter leur visibilité et d'attirer de nouveaux clients
+image: /projects/grossify/home.webp
+badge:
+  label: Nouveau
+  color: green
+  variant: soft
+category: perso
+alert:
+  icon: i-heroicons-exclamation-circle
+  title: En cours de développement
+  description: Le site est actuellement en cours de développement et sera bientôt disponible.
+  color: yellow
+  variant: soft
+date: Août, 2024 - Aujourd'hui

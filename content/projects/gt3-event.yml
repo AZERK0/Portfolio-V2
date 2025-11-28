@@ -1,0 +1,16 @@
+title: GT3 Event - 10K joueurs (Python)
+description: |
+  Événements de course hebdomadaires, gérés par un script, pour une communauté Assetto Corsa Discord de 10 000 joueurs :
+    - Permet aux joueurs de participer à des événements de course automobile en ligne
+    - Choix de la piste par vote
+    - Gestion des inscriptions, des courses et des classements
+image: /projects/assetto-corsa-event/gt3-grand-prix.webp
+otherImages:
+  - /projects/assetto-corsa-event/server.webp
+badge:
+  label: Perso
+  color: blue
+  variant: soft
+category: perso
+url: https://discord.gg/BHUFmjJUTN
+date: Oct., 2024

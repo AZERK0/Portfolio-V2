@@ -1,0 +1,19 @@
+title: Atelier Sophie Sylvestre (Nuxt.js, Contentful)
+description: |
+  Site web pour une restauratrice et concervative de tableaux :
+      - Présentation de son parcours et de son atelier
+      - Mise en avant de ses créations, avec la possibilité de mettre a jour la galerie dans un front contentful
+      - Formulaire de contact
+image: /projects/atelier-sophie-sylvestre/home.webp
+otherImages:
+  - /projects/atelier-sophie-sylvestre/gallery.webp
+  - /projects/atelier-sophie-sylvestre/interventions.webp
+  - /projects/atelier-sophie-sylvestre/studies.webp
+  - /projects/atelier-sophie-sylvestre/contact.webp
+badge:
+  label: Freelance
+  color: yellow
+  variant: soft
+category: freelance
+url: https://atelier-sophie-sylvestre.fr
+date: Dec., 2024

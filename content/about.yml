@@ -1,27 +1,29 @@
-title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+title: Qui suis-je ?
+info:
+  name: Raphael Charpentier
+  birthdate: 03/30/2005
+  location: Lyon, France
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  J’aime partir à la découverte de nouveaux horizons, explorer des lieux qui invitent à l’évasion et me ressourcer loin du quotidien. Prendre soin de moi passe par le sport : la course à pied, le vélo et la musculation m’aident à rester actif et à me sentir bien. Et puis, il y a la musique, une passion intemporelle qui me fait voyager à travers les genres et les époques.
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  C'est en 2017, au collège, que je découvre la programmation en codant sur ma calculatrice durant les permanances. Je découvre qu'avec l'informatique, il est possible de créer a partir de rien, et j'aime ca. Frustré par ses limites, je passe au Python et réalise mes premiers projets. Avec un ami, lui passionné par la finance, nous créons NeuraStock A.I., une IA d'analyse boursière, bien avant l'explosion de l'IA. Ce projet m'initie à la finance et à l'IA.
 
-  ### My Design Philosophy
+  Je développe ensuite Finalyzing, une suite d'outils d'analyse financière en ligne, où je me spécialise en développement web Full-Stack. Ce projet, réalisé avec peu de ressources, est le plus formateur pour moi.
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  Aujourd'hui étudiant à Epitech, je me perfectionne en création de sites et d'applications modernes, alliant rigueur et passion pour le développement web.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
-
-  ### What Drives Me
-
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
-
-  ### Beyond the Screen
-
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
-
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  La chose la plus importante que j'ai pus apprendre durant ces années est que :
+quote: |
+  "Le perfectionnisme nourrit la soif de connaissance et nous pousse à évoluer,
+  tandis que la quête de solutions rapides et faciles nous condamne à la stagnation."
+links:
+  - label: Mes projets
+    to: '#projects'
+    icon: i-heroicons-arrow-right-20-solid
+    size: xl
+    trailing: true
+  - label: Me contacter
+    to: ?contactPopup=true
+    icon: i-heroicons-envelope
+    size: xl
+    color: gray

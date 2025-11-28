@@ -1,0 +1,25 @@
+title: Finalyzing (Angular, Flask)
+description: |
+  Site web offrant une suite complète d'outils d'analyse financière, organisé autour de trois axes principaux :
+    - Analyse de +150 000 actions à travers le monde, avec accès aux données fondamentales et techniques
+    - Analyse de ses portefeuilles d’investissement grâce à des statistiques puissantes et variées
+    - Consultation des données macroéconomiques actuelles et historiques de +215 pays
+image: /projects/finalyzing/home.webp
+otherImages:
+  - /projects/finalyzing/markets.webp
+  - /projects/finalyzing/portfolios.webp
+  - /projects/finalyzing/macro.webp
+video: /projects/finalyzing/demo.mp4
+badge:
+  label: Perso
+  color: blue
+  variant: soft
+category: perso
+url: https://finalyzing.com
+alert:
+  icon: i-heroicons-exclamation-circle
+  title: Accès restreint
+  description: Pour des raisons de couts de maintenance, l'accès à la plateforme est actuellement restreint à certaines entreprises et données. Des chargements infinis peuvent donc être observés.
+  color: red
+  variant: soft
+date: Jul., 2022 - Fév, 2024

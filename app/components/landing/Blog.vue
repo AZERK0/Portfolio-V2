@@ -15,6 +15,7 @@ if (!posts.value) {
 
 <template>
   <UPageSection
+    v-if="page.blog"
     :title="page.blog.title"
     :description="page.blog.description"
     :ui="{
